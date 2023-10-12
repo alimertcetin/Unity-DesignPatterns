@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54505580de24ab469f86a9fc603a498, type: 3}
+  m_Name: DefaultTurretConfigSO
+  m_EditorClassIdentifier: 
+  rotationSpeed: 90
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 183
+  FOVAngle: 260
+  FOVDistance: 15
+  fireCooldown: 0.5
+  projectileSpeed: 40
+  damage: 2.5
+  destroyedParticlePrefab: {fileID: 888679212087542001, guid: e5af2f9e8ce404d4ab56d13de111e648,
+    type: 3}
+  maxHealth: 100
+  currentHealth: 100

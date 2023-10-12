@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b314c4269b3434881bf7dddb65d96a, type: 3}
+  m_Name: DefaultGunConfigSO
+  m_EditorClassIdentifier: 
+  projectileSpeed: 40
+  fireRate: 0.01
+  accuracy: 0.95
+  fireDistance: 80
+  projectileHitParticlePrefab: {fileID: 4651733780197095239, guid: a991a90dbd721ff43bf9bba86c49b096,
+    type: 3}
+  damage: 10
+  trailTime: 0.01
