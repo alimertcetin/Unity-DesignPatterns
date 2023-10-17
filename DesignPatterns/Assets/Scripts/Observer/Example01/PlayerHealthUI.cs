@@ -27,16 +27,19 @@ namespace XIV.DesignPatterns.Observer.Example01
         {
             damageable?.GetHealth().Unregister(this);
             damageable = obj as IDamageable;
-            damageable?.GetHealth().Register(this);
+            
+            Health health = damageable.GetHealth();
+            health.Register(this);
+            UpdateUI(health.normalized);
         }
 
-        void UpdateUI(HealthChange healthChange)
+        void UpdateUI(float normalizedHealth)
         {
-            img_HealthIndicator.fillAmount = healthChange.normalized;
+            img_HealthIndicator.fillAmount = normalizedHealth;
         }
 
-        void IHealthListener.OnHealthChange(HealthChange healthChange) => UpdateUI(healthChange);
+        void IHealthListener.OnHealthChange(HealthChange healthChange) => UpdateUI(healthChange.normalized);
 
-        void IHealthListener.OnHealthDepleted(HealthChange healthChange) => UpdateUI(healthChange);
+        void IHealthListener.OnHealthDepleted(HealthChange healthChange) => UpdateUI(healthChange.normalized);
     }
 }
