@@ -1,6 +1,6 @@
 ﻿namespace XIV.DesignPatterns.Common.HealthSystem
 {
-    public readonly ref struct HealthChange
+    public readonly struct HealthChange
     {
         public readonly float maxHealth;
         public readonly float currentHealth;
